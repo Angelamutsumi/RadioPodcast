@@ -1,8 +1,8 @@
 window.addEventListener('load', start);
 
-var inputRange = null;
-var inputFrequency = null;
-var divPodcasts = null;
+let inputRange = null;
+let inputFrequency = null;
+let divPodcasts = null;
 
 function start() {
 	inputRange = document.querySelector('#inputRange');
@@ -59,7 +59,7 @@ function renderPodcast(podcast) {
 	// divPodcasts.appendChild(description);
 
 	divPodcasts.innerHTML = `
-	<img src='../img/${podcast.img}' />
+	<img src='./img/${podcast.img}' alt='${podcast.title}' />
 	<h2> ${podcast.title} </h2>
 	<p> ${podcast.description} </p>
 	`;
